@@ -35,12 +35,16 @@
  * If It's lower case, React and JSX will take it as HTML tag
  * Super important!!! 
  * */
-        const Container = (
+        const Container = () => (
             <div>
                 <Title /> 
                 <Button />
             </div>
         );
-        ReactDOM.render(Container, root);
+/**
+ * If I want to use this format <~~ />
+ * we have to put the function 
+ * */
+        ReactDOM.render(<Container />, root);
     </script>
 </html>
